@@ -45,7 +45,7 @@ class FileUploadView(APIView):
 
             # Prepare email content
             email_subject = "Python Assignment - Rohit Patel"
-            email_recipient = "rp240502@gmail.com"
+            email_recipient = "tech@themedius.ai"
             email_body = "Summary Report:\n\n"
 
             # Add each state summary to the email body
