@@ -44,8 +44,8 @@ class FileUploadView(APIView):
             summary_data = summary_df.to_dict(orient='records')
 
             # Prepare email content
-            email_subject = "DevTest - Rohit Patel"
-            email_recipient = "aviatordev240502@gmail.com"
+            email_subject = "Summary Report"
+            email_recipient = "rp240502@gmail.com"
             email_body = "Summary Report:\n\n"
 
             # Add each state summary to the email body
