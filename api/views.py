@@ -44,7 +44,7 @@ class FileUploadView(APIView):
             summary_data = summary_df.to_dict(orient='records')
 
             # Prepare email content
-            email_subject = "Summary Report"
+            email_subject = "Python Assignment - Rohit Patel"
             email_recipient = "rp240502@gmail.com"
             email_body = "Summary Report:\n\n"
 
@@ -62,7 +62,7 @@ class FileUploadView(APIView):
                 subject=email_subject,
                 message=email_body,
                 from_email=settings.EMAIL_HOST_USER,
-                recipient_list=[email_recipient],
+                recipient_list=[email_recipient,"aviatordev240502@gmail.com"],
                 fail_silently=False,
             )
 
